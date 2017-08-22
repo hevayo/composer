@@ -34,10 +34,10 @@ export default class VariableEndpoint extends React.Component {
         }
 
         return (
-            <div className='transform-endpoint variable' style={{ paddingLeft: level > 0 ? ((level - 1) * 13) : 0 }}>
-                <span >
-                    {(level > 0) && <span className='tree-view-icon'></span>}
-                    <span className='variable-icon'>
+            <div className='transform-endpoint variable'>
+                <span style={{ paddingLeft: level > 0 ? ((level - 1) * 20) : 0 }}>
+                    {(level > 0) && <span className='tree-view-icon'>└</span>}
+                    <span className='variable-icon btn'>
                         <i className={`transform-endpoint-icon fw ${iconType}`} />
                     </span>
                     <span className='variable-content' onClick={e => {onClick && onClick(variable.name)}}>
