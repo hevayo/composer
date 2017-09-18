@@ -126,7 +126,7 @@ class Frames extends React.Component {
         return (
             <div className="debug-frames-container">
                 <div className="debug-panel-header debug-frame-header">
-                    <div><a className="tool-group-header-title">Frames</a></div>
+                    <div>Frames</div>
                 </div>
                 <div>
                     {frames.map((frame, i) => {
@@ -139,10 +139,10 @@ class Frames extends React.Component {
                                             data-parent={`#debugger-frame-${frame.frameName}`}
                                             href={`#${frame.frameName}`}
                                         >
-                                            {`${frame.frameName}`}
                                             <span className="debug-frame-pkg-name">
                                                 <i className="fw fw-package"></i>{`${frame.packageName}`}
                                             </span>
+                                            <span>{`${frame.frameName}`}</span>
                                         </a>
                                     </h4>
                                 </div>

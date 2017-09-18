@@ -92,11 +92,14 @@
 }
 
 .debug-panel-header a{
-    padding:5px;
     color: #FFF;
     font-weight: bold;
 }
 
 .debug-variables-container{
     color: white;
+}
+
+.debug-frames-container{
+    padding: 10px;
 }
